@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❤️Guess❤️Number</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onload="init()">
+    <main>
+      <div id="welcomeScreen">
+        <h2 id="h2">Guess The Random❤️❤️ Number Between 1-100!</h2>
+        <img class="image" src="./images/game.png" alt="Logo" />
+        <section class="event-section">
+          <p>Select The Difficulty?</p>
+          <div class="button-wrapper">
+            <button onclick="easyMode()">Easy: 10 Attempts</button>
+            <button onclick="hardMode()">Hard: 05 Attempts</button>
+          </div>
+        </section>
+      </div>
+      <!-- our actual game area -->
+      <div id="gameArea">
+        <div id="newGameBtn">
+          <button onclick="newgame()">New❤️❤️Game</button>
+        </div>
+        <section id="inputcontainer">
+          <h3 id="textOutPut">Your😍😍Guess</h3>
+          <input
+            type="number"
+            id="inputBox"
+            min="1"
+            max="100"
+            placeholder="Enter Your Number"
+            onchange="compareGuess()"
+          />
+        </section>
+
+        <section class="stats">
+          <div class="info">
+            <p>Number Of Previous Attempts</p>
+            <span id="attempts"> 0 </span>
+          </div>
+          <div class="info">
+            <p>Number Of Previous Guesses</p>
+            <span id="guesses"> 0 </span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- 0:02 / 0:02
+
+🥀💯1 Second Ringtone💕🥀 Love Ringtone💯😊 5 Second Ringtone 💞❣️C -->
